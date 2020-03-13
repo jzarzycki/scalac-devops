@@ -1,0 +1,3 @@
+CONTAINER ID        IMAGE                             COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+278cf2ab045f        jzarzycki97/jan-zarzycki:scalac   "nginx -g 'daemon of…"   52 seconds ago      Up 45 seconds       0.0.0.0:80->80/tcp, 0.0.0.0:8090->8090/tcp   nginx
+2de39e5c2d3a        jenkins                           "/bin/tini -- /usr/l…"   52 seconds ago      Up 45 seconds       8080/tcp, 50000/tcp                          jenkins

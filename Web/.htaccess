@@ -1,0 +1,17 @@
+# file ".htpasswd generated with command htpasswd -c /etc/apache2/.htpasswd scalac"
+AuthType        Basic
+AuthName        "Restricted Content"
+AuthUserFile    "/etc/apache2/.htpasswd"
+Require         valid-user
+
+<If "%{HTTP_HOST} == 'blog.scalac.io'">
+    Redirect 301 "/" "http://scalac.io/blog"
+</If>
+
+# file not_found.html in site root (default /var/www/html)
+ErrorDocument 404 /not_found.html
+
+#<RequireAll>
+    Require all granted
+    Require not ip 10.0.3.1
+#</RequireAll> 

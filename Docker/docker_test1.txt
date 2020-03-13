@@ -1,0 +1,2 @@
+CONTAINER ID        IMAGE                             COMMAND                  CREATED             STATUS              PORTS                NAMES
+467b094efba3        jzarzycki97/jan-zarzycki:scalac   "nginx -g 'daemon of…"   6 seconds ago       Up 5 seconds        0.0.0.0:80->80/tcp   pensive_leakey

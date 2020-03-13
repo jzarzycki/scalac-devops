@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+        nginx:
+                container_name: nginx
+                image: jzarzycki97/jan-zarzycki:scalac
+                volumes:
+                        - ./proxy.conf:/etc/nginx/conf.d/proxy.conf
+                ports:
+                        - 80:80
+                        - 8090:8090
+                restart: always
+
+
+        jenkins:
+                container_name: jenkins
+                image: jenkins
+                restart: always
+
